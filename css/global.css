@@ -6519,6 +6519,7 @@ p.description {
 }
 .selectSportTeamBlock .sportTeamPics input[type="radio"]:checked + div.focus > .pic{
 	outline: 2px solid #000;
+	border:none;
 }
 .selectSportTeamBlock .sportTeamPics input[type="radio"]:checked ~ p{
 	color:#50E3C2 !important;
