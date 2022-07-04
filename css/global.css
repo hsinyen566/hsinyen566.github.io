@@ -6452,6 +6452,7 @@ p.description {
     height: 85px;
     background-color: #000;
     margin: 5px;
+   border:2px solid transparent;
 }
 .selectTeamPicItem img{
 	position: absolute;
