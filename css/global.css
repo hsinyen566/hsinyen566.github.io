@@ -6450,7 +6450,6 @@ p.description {
     position: relative;
     width: 88px;
     height: 88px;
-    background-color: #000;
     margin: 5px;
 }
 .selectTeamPicItem img{
@@ -6517,7 +6516,7 @@ p.description {
    background-image: linear-gradient(134.72deg, #3FD750 0%, #24CBFF 100%);
   
 }
-.selectSportTeamBlock .sportTeamPics input[type="radio"]:checked + div.focus > .pic{
+.selectSportTeamBlock .sportTeamPics input[type="radio"]:checked + div.focus >.pic::after{
 	position: absolute;
 	border:2px solid #000;
     content: "";
