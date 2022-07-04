@@ -6448,8 +6448,8 @@ p.description {
 	border-radius: 50%;
     overflow: hidden;
     position: relative;
-    width: 88px;
-    height: 88px;
+    width: 85px;
+    height: 85px;
     background-color: #000;
     margin: 5px;
 }
@@ -6518,8 +6518,11 @@ p.description {
   
 }
 .selectSportTeamBlock .sportTeamPics input[type="radio"]:checked + div.focus > .pic{
-	outline: 2px solid #000;
-	border:none;
+    border: 2px solid #000;
+    /* border: none; */
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
 }
 .selectSportTeamBlock .sportTeamPics input[type="radio"]:checked ~ p{
 	color:#50E3C2 !important;
