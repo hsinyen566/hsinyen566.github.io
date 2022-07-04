@@ -6452,8 +6452,12 @@ p.description {
     height: 85px;
     background-color: #000;
     margin: 5px;
-   border:2px solid transparent;
+  /* border:2px solid transparent;*/
 }
+
+
+
+
 .selectTeamPicItem img{
 	position: absolute;
     top: 0;
@@ -6518,13 +6522,22 @@ p.description {
    background-image: linear-gradient(134.72deg, #3FD750 0%, #24CBFF 100%);
   
 }
+/*
 .selectSportTeamBlock .sportTeamPics input[type="radio"]:checked + div.focus > .pic{
     border: 2px solid #000;
-    /* border: none; */
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
+}*/
+
+.selectSportTeamBlock .sportTeamPics input[type="radio"]:checked + div.focus > .pic ::after {
+	
+	position: absolute;
+	border:2px solid #000;
+	
 }
+
+
 .selectSportTeamBlock .sportTeamPics input[type="radio"]:checked ~ p{
 	color:#50E3C2 !important;
 }
