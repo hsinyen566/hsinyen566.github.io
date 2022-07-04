@@ -6532,10 +6532,20 @@ p.description {
 
 .selectSportTeamBlock .sportTeamPics input[type="radio"]:checked + div.focus > .pic::after {
 	
-	position: absolute;
-	border:2px solid #000;
-	
+	    position: absolute;
+    border: 2px solid #000;
+    top: 0px;
+    content: "";
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
 }
+	
 
 
 .selectSportTeamBlock .sportTeamPics input[type="radio"]:checked ~ p{
