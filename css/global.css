@@ -9462,7 +9462,7 @@ p.description {
 	/* popup */
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 50px) {
 	.webMode {
 		display: none !important;
 	}
