@@ -1,0 +1,1884 @@
+@charset "UTF-8";
+
+/*20210803*/
+/* > 1260px here  */
+
+.oa2{
+	background: url(../images/olympics/oa2_bg.png) center center no-repeat;
+}
+.title-wrapper .tabArea.sty_olympics ul {
+	padding: 15px 0;
+}
+
+.title-wrapper .tabArea.sty_olympics li {
+	line-height: 30px;
+}
+
+.title-wrapper .tabArea.sty_olympics li a {
+	padding: 0 10px;
+}
+
+.title-wrapper .tabArea.sty_olympics li.active a {
+	color: #ffffff;
+	background-color: #96764D;
+	border-radius: 30px;
+}
+
+.title-wrapper .tabArea.sty_olympics .lv2 {
+	display: block;
+}
+
+.title-wrapper .tabArea.sty_olympics .lv2 ul {
+	padding: 0px 0;
+}
+
+.title-wrapper .tabArea.sty_olympics .lv2 li {
+	font-size: 1.125rem;
+	line-height: 44px;
+}
+
+.title-wrapper .tabArea.sty_olympics .lv2 li a {
+	color: #aaa;
+	padding: 0 0px;
+}
+
+.title-wrapper .tabArea.sty_olympics .lv2 li.active a {
+	color: #fff;
+	background-color: transparent;
+}
+
+.title-wrapper .tabArea.sty_olympics .lv2 li.active::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-bottom: 5px solid #96764D;
+}
+
+
+ .banner-silder .type201_1 {
+	left: -317px;
+	/*background-size: 40px auto;*/
+	width: 317px;
+	height: auto;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	margin-top: 60px;
+	z-index: 1;
+}
+
+.banner-silder .type201_2 {
+	right: -310px;
+	/*background-size: 40px auto;*/
+	width: 240px;
+	height: auto;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	margin-top: 60px;
+	z-index: 3;
+}
+.banner-silder .type201_1 img, .banner-silder .type201_2 img{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	right:10px;
+	transform:translateY(-50%);
+}
+.countDownContent{
+	width: 360px;
+    text-align: center;
+    /* margin-top: -80px; */
+    display: flex;
+    margin: 0 auto;
+}
+.calenderContent{
+	height:70px;
+	display: inline-block;
+	margin: 0px 14px 0px 0px;
+}
+.calenderContent .calender{
+	background:url(../images/olympics/olympics_calender.png) left center no-repeat;
+	padding: 0px 0px 0px 30px;
+	line-height: 35px;
+    font-size: 24px;
+    text-align: right;
+}
+.calenderContent .title{
+	font-size: 32px;
+    text-align: right;
+    line-height: 32px;
+    font-weight: bold;
+}
+.olympicsCountDown {
+	font-family: sans-serif; 
+	color: #fff; 
+	display: inline-block; 
+	font-weight: 100; 
+	text-align: center; 
+	font-size: 23px;
+	height:78px; 
+} 
+.olympicsCountDown > div{ 
+	/*padding: 5px; */
+	background: #B22D3C; 
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	margin: 0px 5px 0px 5px;
+} 
+
+.olympicsCountDown div > span{ 
+	padding: 5px;
+    display: inline-block;
+    font-weight: 900;
+} 
+.olympicsCountDown .label{ 
+	padding-top: 10px; 
+	font-size: 16px; 
+}
+
+.olympicsCardTitle{
+	margin: 0 4%;
+	font-size:1.5rem;
+	line-height: 50px;
+	/*background: url(../images/olympics/sportList_title.png) no-repeat;
+	padding:0 0 0 25px;*/
+}
+
+.olympicsCardTitle.winter{
+	margin: 0 4%;
+	font-size:1.5rem;
+	line-height: 50px;
+	background: none;
+	padding:0 0 0 5px;
+}
+
+.olympicsCardTitle h2{
+	font-size:1.5rem;
+}
+
+
+.olympicsCardTitle2 h2{
+	font-size:1.5rem;
+}
+
+.olympicsGifBlock{
+	margin: 1% 4%;
+	font-size:1.1rem;
+	color:#ccc;
+	height:70px;
+	padding: 10px 0 0 0;
+}
+
+.taiwanSportTitle .desc{
+	margin: 1% 4%;
+	font-size:1.1rem;
+	color:#ccc;
+	padding: 10px 0 0 0;
+}
+.taiwanSportListBlock{
+	margin: 0 4%;
+	height:110px;
+	text-align:center;
+	background-color:#650D19;
+	border-bottom: 4px solid #B22D3c;
+	position:relative;
+}
+
+
+.list_sport {
+	/*position: absolute;*/
+	top: 0;
+	left: 0;
+	right: 0;
+	height:110px;	
+	padding: 0 40px;
+	overflow: hidden;
+	display: inline-block;
+    box-sizing: border-box;
+    width:98%;	
+}
+
+.list_sport .item {
+	width: 110px;
+	font-size: 0.875rem;
+	line-height: 20px;
+	color: #FFF;
+	opacity: 0.7;
+}
+.list_sport .item.active {
+	width: 110px;
+	font-size: 0.875rem;
+	line-height: 20px;
+	color: #FFF;
+	opacity: 1;
+	background-color:#B22D3c;
+}
+
+.list_sport .item .pic img{
+	padding:10px 0 0 0;
+	width:67px;
+	height:67px;
+}
+.list_sport .item span {
+	display: inline-block;
+	font-size: 1rem;
+	font-family: "Open Sans", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+/*
+.list_sport .swiper-button-next{
+	background-image: url(../images/arrow_next.png);
+	right:0;
+}
+
+.list_sport::before {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	top: 28px;
+	left: 0;
+	bottom: 0;
+	width: 5%;
+	background: -webkit-gradient(linear, right top, left top, from(rgba(24, 24, 24, 0.6)),
+		to(#181818));
+	background: -webkit-linear-gradient(right, rgba(24, 24, 24, 0.6) 0%,
+		#181818 100%);
+	background: -o-linear-gradient(right, rgba(24, 24, 24, 0.6) 0%, #181818
+		100%);
+	background: linear-gradient(270deg, rgba(24, 24, 24, 0.6) 0%, #181818
+		100%);
+}
+
+.list_sport::after {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	top: 28px;
+	right: 0;
+	bottom: 0;
+	width: 5%;
+	background: -webkit-gradient(linear, left top, right top, from(rgba(24, 24, 24, 0.6)),
+		to(#181818));
+	background: -webkit-linear-gradient(left, rgba(24, 24, 24, 0.6) 0%,
+		#181818 100%);
+	background: -o-linear-gradient(left, rgba(24, 24, 24, 0.6) 0%, #181818
+		100%);
+	background: linear-gradient(90deg, rgba(24, 24, 24, 0.6) 0%, #181818
+		100%);
+}
+
+.list_sport::before, .list_sport::after {
+	width: 50px;
+	height: 50px;
+}*/
+
+
+.list_sport .btn_next, .list_sport .btn_prev{
+    background-color:#111;
+    opacity:0.8;
+}
+.taiwanSportDescription{
+	margin:1% 4%;
+	background-color:#303030;
+	height: 160px;
+	display: flex;
+}
+.taiwanSportDescription .additionContainer{
+    width: 8%;
+    position: relative;    
+}
+.taiwanSportDescription  .additionContainer .additionPic{
+	border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 13px;
+    top:18px;
+}
+.taiwanSportDescription  .additionContainer .additionPic.hasBackground{
+    background-color: #B22D3C;
+}
+
+.taiwanSportDescription  .additionContainer .additionPic  img{
+	width: 40px;
+    height: 40px;
+}
+.taiwanSportDescription .titleAndDesc{
+	width:68%;
+}
+.taiwanSportDescription .titleAndDesc .title{
+	font-size: 1.4rem;
+    padding-top: 28px;
+}
+.taiwanSportDescription .titleAndDesc .description{
+	font-size: 1.1rem;
+    padding-top: 2%;
+    line-height:1.8rem;
+}
+.taiwanSportDescription .pic{
+	box-sizing: border-box;
+	text-align: right;
+	width:30%;
+}
+.taiwanSportDescription .pic img{
+	height:160px;
+	width:345px;
+	max-width:100%;
+	max-heigth:100%;
+}
+
+.taiwanSportTimeShift{
+	margin:-30px 4%;
+	background-color:#303030;
+	height: 50px;
+	display: flex;	
+}
+
+.taiwanSportTimeShift .title{
+	padding:1% 3%;
+	font-size: 1.2rem;
+	width: 40%;
+}
+
+.taiwanSportTimeShift .triangle{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 8px 5px 0 5px;
+	border-color: #ffffff transparent transparent transparent;
+	margin: 20px;
+    right: 5%;
+    position: absolute;
+}
+
+.taiwanSportTimeShift a{
+	display: block;
+	padding: 0 20px;
+	z-index:3;
+	width:100%;
+}
+
+.taiwanSportTimeShiftContent{
+    margin:20px 0;
+}
+.taiwanSportEPGContent .liveListBlock .list_item{
+	display:flex;
+}
+.taiwanSportEPGContent .liveListBlock .list_item .pic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #B22D3C;
+    margin-right: 15px;
+}
+
+.taiwanSportEPGContent .liveListBlock .list_item .pic.winter {
+    border-radius: 4px;
+    width: 32px;
+    height: 48px;
+    background-color: #222222;
+    margin-right: 15px;
+}
+.taiwanSportEPGContent .liveListBlock .list_item .medal{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    -webkit-box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
+    /* background-size: 40px 40px; */
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    right: 160px;
+    top: 50%;
+    margin-top: -20px;
+    text-align: center;
+    padding: 4px 0;
+}
+
+.taiwanSportEPGContent .liveListBlock .list_item .medal img{   
+    width: 32px;
+    height: 32px;   
+}
+
+.taiwanSportEPGContent .liveListBlock .list_item .CT{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    -webkit-box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
+    /* background-size: 40px 40px; */
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    right: 95px;
+    top: 50%;
+    margin-top: -20px;
+    text-align: center;
+    padding: 4px 0;
+}
+
+.taiwanSportEPGContent .liveListBlock .list_item .CT img{   
+    width: 32px;
+    height: 32px;   
+}
+
+.taiwanSportEPGContent .liveListBlock .list_item .cmedal{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    -webkit-box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
+    /* background-size: 40px 40px; */
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    right: 95px;
+    top: 50%;
+    margin-top: -20px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+
+
+
+.taiwanSportEPGContent .liveListBlock .list_item h3 span {
+    font-size: 0.75rem;
+    color: #fff;
+    padding: 0 5px;
+    margin-right: 10px;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: top;
+	text-align:center;   
+	width:50px;
+	height:20px; 
+	background-color:#FF0056;
+	border: 0px;	   
+}
+
+.content-wrapper .sty202{
+	width:100%;
+	height:2px;
+	margin-bottom:0;
+}
+
+.content-wrapper .sty202 .content{
+	max-width:92%;
+	position: relative;	
+	height:2px;
+	margin:0 auto;
+	margin-bottom:0;
+}
+.content-wrapper .sty202 .content .pic{
+	width:226px;
+	position: absolute;
+	left: 4%;
+	margin-top:-158px;
+	z-index:3;
+}
+
+.content-wrapper .sty202 .content .gifListBlock{
+	float:left;
+}
+.content-wrapper .sty202 .content .olympicsMessage{
+	float:left;
+	height:64px;
+	max-width:70%;
+	left: 20%;
+}
+
+.player_main .program{
+	  text-align: left;
+	  position: absolute;
+	  bottom: 130px;
+	  left: 80px;
+	 font-size: 30px;
+	 line-height:42px;
+	}
+.player_main .channel{
+	   text-align: left;
+	  position: absolute;
+	  bottom: 100px;
+	  left: 80px;
+	 font-size: 20px;
+}
+.player_main .showlive{
+	  position: absolute;
+	  top: 20px;
+	  left: 50px;
+}
+.player_main .showlive .dot{
+	  position: absolute;
+	  height: 14px;
+ 	  width: 14px;
+  	  background: linear-gradient(314.72deg, #F427C2 0%, #FF2006 100%);
+  	  border-radius: 50%;
+      display: inline-block;
+      top: 26px
+}
+.player_main .showlive .live{
+  position: absolute;
+  left:20px; 
+  height: 60px;
+  width: 128px;
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 60px;
+  text-align: justify;
+	
+}
+
+.filterBlock{
+    margin: 5px 4%;
+    background-color: #303030;
+    height: 50px;
+    display: flex;	
+}
+.chFilter{
+	width:32%;
+	background-color: #282828;
+    display: flex;
+    padding: 15px 20px 15px 40px;
+}
+
+.chFilterRg {
+	margin: 0 5%;
+	font-size:13px;
+	
+}
+.chFilterRg > input{
+	-webkit-appearance: radio;
+}
+.olympics_filter {
+	display: inline-block;
+	width:50px;
+	position:relative;
+	/*
+	margin-left: 30px;
+	padding-top: 5px;
+	*/
+}
+
+.olympics_filter >a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	/*
+	background: url(../images/icon_filter.svg) center center no-repeat;
+	background-size: 18px auto;*/
+	cursor:pointer;
+	z-index:2;
+}
+.olympics_filter img{
+    width: 24px;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    top: 7px;
+}
+
+.olympics_filter .filter_label{
+	font-size:12px;
+	position:absolute;
+	right:0px;
+	top:25px;	
+	
+}
+.sportFilterContent{
+	width:52%;
+	padding:15px 10px;
+	white-space: nowrap;
+	overFlow : hidden;
+	text-overflow: ellipsis;
+}
+.sportFilterContent span{
+  box-sizing: border-box;
+  height: 44px;
+  width: 130px;
+  border: 2px solid #4A4A4A;
+  border-radius: 30px;
+  color: #FFE194;
+  font-family: "PingFang TC";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  padding: 7px 10px;
+  margin:0 7px;
+  cursor:pointer;
+    
+}
+.sportFilterContent span img{
+	width:20px;
+	height:20px;
+	vertical-align:middle;
+	margin-right:7px;
+}
+
+
+.popup.olympicsFilter{
+	background-color: #181818;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	max-width: 1152px;
+	transform: translate(-50%, -50%);
+	color: #DDD;
+	height: 100%;
+	z-index: 11;	
+	
+}
+.olympicsFilter .bt_close{
+	position:absolute;
+	top:10px;
+	right:20px;
+	width:20px;
+	height:20px;
+}
+
+.olympicsFilter .bt_close:before {
+	width: 20px;
+}
+.olympicsFilter .bt_close:after {
+	width: 20px;
+}
+.olympicsFilter .bt_close.showMsgBtn:before {
+    background-color: #fff;
+}
+.olympicsFilter .bt_close.showMsgBtn:after {
+    background-color: #fff;
+}
+
+.filterWrapper {
+	padding: 36px 56px;
+	color: #ddd;
+	font-size: 16px;
+}
+
+.filterWrapper h2 {
+	font-family: 'Noto Sans TC', "Microsoft JhengHei", sans-serif;
+	font-size: 27px;
+	line-height: 100%;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.filterWrapper p{
+	margin: 24px auto;
+}
+.sportsWrapper{
+	/*display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;*/
+	height:62vh;
+	overFlow: hidden;
+	
+}
+.sportItem {
+	width:126px;
+	height:126px;
+	float: left;
+	position:relative;
+	text-align:center;
+}
+.sportItem .pic{
+	margin: 0 auto;
+	width:90px;
+	height:90px;	
+}
+.sportItem .pic img{
+	width:90px;
+	height:90px;
+}
+.sportItem span img{
+	width:23px;
+	height:23px;
+	vertical-align:middle;
+}
+
+.sportItem a{
+	position:absolute;
+	left:0;
+	top:0;
+	width:126px;
+	height:126px;
+}
+
+.sportItem a:hover{
+	background-color:#B22D3c;
+}
+
+.sportItem.all {
+	margin-bottom:20px;
+	float:none;
+}
+.sportItem .checked{
+	display:none;
+	z-index:5;
+	position:absolute;
+	top:35px;
+	left:42px;
+}
+
+
+.sportItem .checked img{
+	width:40px;
+	height:40px;
+}
+
+input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    top: -1px;
+    left: -3px;
+    position: relative;
+    background-color: #808080;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+    top: -1px;
+    left: -3px;
+    position: relative;
+    background-color: #ffe194;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid #808080;
+}
+
+.list_date.olympics{
+    padding: 0 40px;
+    margin: 5px 4%;	
+    background-color:#303030;
+}
+.list_date.olympics .item.active {
+	border-bottom: 5px solid #FFE194;
+	color:#FFE194;
+}
+.list_date.olympics::after, .list_date.olympics::before{
+	display:none;
+}
+
+.list_date.olympics .btn_next, .list_date.olympics .btn_prev{
+    background-color:#111;
+    opacity:0.8;
+}
+
+.marqueeBlock{
+	margin: 0 4%;
+	height:41px;
+	overflow:hidden;
+	position:relative;
+	display:block;
+	background: linear-gradient(90deg, #950A34 0%, rgba(24,24,24,0) 100%);
+}
+
+.marqueeTitle::before {
+	width: 220px;
+    height: 40px;
+    background-color: black;
+    overflow: hidden;
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/olympics/marquee_title_fifa_bg_2022.png) left no-repeat;
+	z-index:3;
+}
+.marquee-silder{
+	position:relative;
+	display:block;
+	height:40px;
+	padding:0 0 0 231px;
+}
+
+.marquee-silder .list_item {
+	/*-webkit-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;*/
+	height: 40px;
+}
+
+.marquee-silder .marqueeContent{
+	font-size:20px;
+	line-height: 16px;
+	letter-spacing:0.47px;
+	color:#FFFFFF;
+	white-space: nowrap;
+	position: absolute;
+	margin: 15px 0 0 0;
+}
+
+.medalsListBlock {
+    margin: 0 4%;
+    text-align: center;
+    position: relative;
+    height: 244px;
+}
+.list_medals {
+	
+	position: relative;	
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 244px;
+    padding:0;
+    overflow: hidden;
+   
+    box-sizing: border-box;
+    /*width: 82%;
+    display: inline-block;
+  	margin: 0 auto;*/
+    
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  	max-width:934px;
+    
+}
+.list_medals .list_item{
+	text-align:center;
+	background-color:#011429;
+	width:80px;
+	max-width:80px;	
+}
+.list_medals .list_item.taiwanTeam{
+	/*width: 80px;*/
+	text-align:center;
+	background-color:#011E3E;
+	width:124px;
+	max-width:124px;
+    font-size: 0.875rem;
+    color: #FFF;
+    margin: 0 10px 0 0;
+}
+.list_medals .list_item .leaderboard {
+	position: relative;
+	display: block;
+	/*z-index: 1;*/
+	width: 100%;
+	top: 0px;
+	padding-bottom: 4%;
+	background: url(../images/olympics/medal_rankbg.png) no-repeat;
+	border-top: 2px solid #47E4C2;
+	padding:0 0 10px 0;
+}
+.list_medals .list_item .leaderboard .ranking
+	{
+	position: relative;
+	color: #181818;
+	top: 3px;
+	font-weight: bold;
+	font-style: oblique;
+	font-size: 22px;
+    width: 90%;
+	text-align: center;
+}
+.list_medals .list_item h3{
+    height: 1rem; 
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.list_medals .list_item .medalItem_g {
+	line-height:21px;
+	font-size:18px;
+	padding:0 0 25px 0;
+	color:#FFE194; 
+	border-right: 2px solid #033268;
+}
+.list_medals .list_item .medalItem_s {
+	line-height:16px;
+	font-size:14px;
+	padding:0 0 27px 0;
+	color:#FFFFFF;
+	border-right: 2px solid #033268;
+}
+.list_medals .list_item .medalItem_b {
+	line-height:16px;
+	font-size:14px;
+	padding:0 0 21px 0;
+	color:#FFFFFF;
+	border-right: 2px solid #033268;
+}
+.list_medals .list_item .medalItem_t {
+	line-height:16px;
+	font-size:14px;
+	padding:0;
+	color:#68B1D5;
+	border-right: 2px solid #033268;
+}
+
+.list_item .taiwanTeam .swiper-slide .cht{
+	padding: 17px 0 0 0;
+	display: block;
+	align-items: center;
+	margin: auto; 
+	text-align: center;
+}
+.list_item.taiwanTeam.swiper-slide .chtImg{
+	display: inline;
+    padding: 0;
+    vertical-align: middle;
+    width:30px;
+    height:30px;
+    margin: 0 20px 0 0;
+}
+.list_item.taiwanTeam.swiper-slide .chtImg.team{
+    width:24px;
+    height:24px;
+}
+.list_item.taiwanTeam.swiper-slide .chtH{
+	display: inline;
+    padding: 0;
+    vertical-align: middle;
+}
+
+
+.list_item.taiwanTeam.swiper-slide .chtP{
+	display: inline;
+    padding: 0;
+    vertical-align: middle;
+    line-height:21px;
+    font-size:18px;
+    color:#FFE194; 
+    border-right: 2px solid #002958;
+}
+
+.list_item.taiwanTeam.swiper-slide .chtSmallP{
+	display: inline;
+    padding: 0;
+    vertical-align: middle;
+    color:#FFE194; 
+    border-right: 2px solid #002958;
+    line-height:16px;
+    font-size:14px;
+}
+
+.chtMedalsBlock{
+	width:100%;
+	display: inline-block;
+	text-align:center;
+}
+
+.chtMedalsTitle{
+	vertical-align: top;
+	width:241px;
+	height:67px;
+	display: inline-block;
+	background: url(../images/olympics/m_chtMedalsTitle.png) center center no-repeat;
+}
+.chtMedals{
+	display: inline-block;
+	text-align:center;
+}
+
+.chtMedals_g{
+	height:77px;
+	width:70px;
+	display: inline-block;
+	background: url(../images/olympics/m_chtMedals_g.png) center center no-repeat;
+}
+.chtMedals_s{
+	height:77px;
+	display: inline-block;
+	width:70px;
+	background: url(../images/olympics/m_chtMedals_s.png) center center no-repeat;
+}
+.chtMedals_b{
+	height:77px;
+	display: inline-block;
+	width:70px;
+	background: url(../images/olympics/m_chtMedals_b.png) center center no-repeat;
+}
+.chtMedals_rank{
+	height:77px;
+	display: inline-block;
+	width:70px;
+	background: url(../images/olympics/m_chtMedals_rank.png) center center no-repeat;
+}
+.chtMedals_number{
+ 	position: relative;
+    top: 46%;
+    font-size: 30px;
+    text-align: center;
+    color:#fff;
+}
+.chtMedals .updateDate{
+	text-align: right;
+    color: #AAAAAA;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+    font-size: 12px;
+    margin: 5px 0 0 0;
+}
+.olympicsCardTitle .hinet.bt_more p{
+	position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 2;
+    font-size: 14px;
+    color: #EEEEEE;
+}
+.olympicsCardTitle .hinet.bt_more p::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -15px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    border-color: transparent transparent transparent #50E3C2;
+}
+
+.fifaScoreAreaBlock{
+	margin: 0 4%;
+}
+
+.fifaScoreBlock{
+	padding: 0 6%;
+	position: relative;
+}
+.fifaScoreBlock::after {
+    content: "";
+    display: block;
+    clear: both;
+    padding:0 0 36px 0;
+}
+
+.title-wrapper.fifascore{
+	padding: 20px 4% 24px;
+	border-bottom:none;
+}
+	
+.title-wrapper .tabArea.fifascore{
+	margin: 0 auto;
+	width: max-content;
+}
+
+.title-wrapper .tabArea.fifascore li {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 46px;
+  margin: 0 8px;
+}
+
+.title-wrapper .tabArea.fifascore li a {
+  line-height: 30px;
+  margin:8px 0;
+  padding: 0 13px;
+}
+
+
+
+.title-wrapper .tabArea.fifascore ul{
+	
+}
+.title-wrapper .tabArea.fifascore ul::before{
+    background: #000000;
+    opacity: 0.3;
+    border-radius: 23px;
+    content: "";
+    display: block;
+    height: 46px;
+    content: "";
+    position: absolute;
+    top: 0;
+    /* left: 100%; */
+    width: 100%;
+    /* transform: translate(-50%,0%); */
+    /* width: max-content;*/
+}
+.title-wrapper .tabArea.fifascore .item.active a{
+	background-color: #EEEEE4;
+    color: #8A1538;
+    border-radius: 16px;
+}
+
+
+
+.fifaScoreBlock .fifadividers {
+    text-align: center;
+    color: #E6E6E6;
+    font-size: 18px;
+    line-height: 140%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.fifaScoreBlock .fifadividers::before {
+	content: "";
+	display: block;
+	background-color: #E6E6E6;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+
+
+
+.fifaScoreBlock .list_item {
+	display: flex;
+	justify-content: center;
+    /* padding: 8px 10px; */
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 1% 16px 0;
+    width: 24.1%;
+    height:auto;
+    min-height: 241px;
+	
+}
+.fifaScoreBlock .list_item:nth-of-type(4n+0) {
+    margin-right: 0;
+}
+.fifaScoreBlock .list_item .com{
+	border-radius: 4px;
+	position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 42px 10px 0 10px;
+    background-color: #F5F5F5;
+    font-size:12px;
+    color:#979797
+}
+
+.fifaScoreBlock .list_item .com .teamHeader{
+	display: flex;
+	text-align:center;
+	margin-bottom: 3px;
+}
+
+.fifaScoreBlock .list_item .com .teamItem{
+	display: flex;
+	padding: 9px 0;
+	color:#000000;
+	text-align: center;
+	font-weight: bold;
+	background-color: #E5E5E5;
+	margin-bottom:2px;
+	border-radius: 4px;
+}
+
+.fifaScoreBlock .list_item .com .teamItem.rank1{
+	background-color: #FFBF00;
+}
+.fifaScoreBlock .list_item .com .teamItem.rank2{
+	background-color: #F2D06D;
+}
+
+
+.fifaScoreBlock .teamName{
+	text-align: left;
+	width:40%;
+	display:flex;
+	margin-left: 8px;
+}
+
+.fifaScoreBlock .teamName p{
+    font-weight: normal;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.fifaScoreBlock .teamName.t16{
+	text-align: center;
+	width:auto;
+	display:inline-block;
+	margin-left: 8px;
+	margin-top: 10px;
+}
+.fifaScoreBlock .pic.t16{
+	display:inline-block;
+}
+.fifaScoreBlock .t16 p{
+	display:inline-block;
+	line-height: 19px;
+    white-space: nowrap;
+}
+
+.fifaScoreBlock .list_item .com .teamItem.t16 {
+/* 	width: 228px; */
+/*     height: 44px; */
+/*     background-color: black; */
+/*     overflow: hidden; */
+/*     content: "";  */
+/*     position: absolute; */
+/* 	left:50%; */
+/* 	top:50%; */
+/* 	transform: translate(-50%,0%); */
+/*     width: 100%; */
+/*     height: 100%; */
+/*     background: url(../images/olympics/fifascore_country_default.png) left no-repeat; */
+	display:block;
+	height: 44px;
+	background: url(../images/olympics/fifascore_country_default.png) center no-repeat;
+}
+.fifaScoreBlock .list_item .com .teamItem.t16.win {
+	background: url(../images/olympics/fifascore_country_win.png) center no-repeat;
+/* 	width: 228px; */
+/*     height: 44px; */
+/*     background-color: black; */
+/*     overflow: hidden; */
+/*     content: "";  */
+/*     position: absolute; */
+/*     top: 0; */
+/*     left: 0; */
+/*     width: 100%; */
+/*     height: 100%; */
+/*     background: url(../images/olympics/fifascore_country_win.png) left no-repeat; */
+/* 	z-index:3; */
+}
+.fifaScoreBlock .s1{
+	width:10%;
+}
+.fifaScoreBlock .s2{
+	width:10%;
+}
+.fifaScoreBlock .s3{
+	width:10%;
+}
+.fifaScoreBlock .s4{
+	width:13%;
+}
+.fifaScoreBlock .s5{
+	width:17%;
+}
+
+.fifaScoreBlock .list_item .com .pic{
+
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    margin-right: 6px;
+}
+
+
+
+.fifaScoreBlock .list_item .com .pic img{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fifaScoreBlock .list_item .txt_top {
+    position: absolute;
+    left: 12px;
+    color:#8A1538;
+    height: 28px;
+    background-color: #FFBF00;
+    font-size: 12px;
+    padding: 0 6px;
+    line-height: 34px;
+    font-weight: bold;
+}
+.newsListBlock {
+	padding: 0 4%;
+	position: relative;
+}
+
+.newsListBlock .list_item {
+/*	display: -webkit-box;
+	display: -ms-flexbox;*/
+    display: flex;
+	background-color: #222;
+	padding: 20px 25px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	margin: 0 0 0 0;
+	width:50%;
+	height: 190px;
+}
+
+
+.newsListBlock .list_item .box {
+	width: 224px;
+    height: 150px;
+    padding: 0 10px 0 0;
+    
+}
+
+.newsListBlock .list_item .pic {
+	position: relative;
+	height: 150px;
+    width: 224px;
+	background-color: #000;
+}
+
+.newsListBlock .list_item .pic img {
+	max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+  /*  height: auto;*/
+  	height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.newsListBlock .list_item .pic::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, rgba(34,
+		34, 34, 0)), to(#181818));
+	background: -webkit-linear-gradient(top, rgba(34, 34, 34, 0) 90%,
+		#181818 100%);
+	background: -o-linear-gradient(top, rgba(34, 34, 34, 0) 90%, #181818
+		100%);
+	background: linear-gradient(180deg, rgba(34, 34, 34, 0) 90%, #181818
+		100%);
+}
+
+
+
+.newsListBlock .list_item .com {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 0;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+}
+
+.newsListBlock .list_item .com .title {
+	font-size: 1.3125rem;
+	line-height: 30px;
+	font-family: "Open Sans", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	margin-bottom: 11px;
+	font-weight: 500;
+	letter-spacing: 0.26px;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+.newsListBlock .list_item .com p {
+	font-size: 1.125rem;
+	line-height: 150%;
+	color: #eee;
+	height: 4.6em;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+
+.newsListBlock .list_item .com .time {
+	position: absolute;
+	font-size: 14px;
+	letter-spacing: 0.43px;
+	line-height: 20px;
+	color: #888888;
+	position:absolute;
+	bottom:5px;
+	left:0;
+}
+
+.newsListBlock::after {
+	position: static;
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.btn_filter{
+    display: block;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #fff;
+    padding: 5px 12px;
+    text-decoration: none;
+    margin: 20px auto;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    cursor:pointer;	
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1260px) {
+
+	.fifaScoreBlock .list_item {
+	    margin: 0 1% 16px 0;
+	    width: 49%;
+	}
+	.fifaScoreBlock .list_item:nth-of-type(2n+0) {
+   		 margin-right: 0;
+	}
+	.fifaScoreBlock .list_item:nth-of-type(4n+0) {
+   		 margin: 0 1% 16px 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.oa2{
+	/*background:none;*/
+	}
+.banner-silder .main{
+	display:none;
+   }
+.banner-silder .type201_1 {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-top: 0px;
+	z-index: 0;
+	position:relative;
+	top:0px;
+	left:0px;
+  }  
+   
+  .banner-silder .type201_1 img{
+	width: 90%;
+	height:auto;
+	position: relative;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,0%);
+	/*transform: translateY(0%);*/
+  }
+  
+.content-wrapper .sty202{
+	display: none;
+}
+
+.taiwanSportDescription{
+	margin:1% 4%;
+	background-color:#303030;
+	display: flex;
+	margin-bottom:5px;
+	height:max-content;
+}
+.taiwanSportDescription .additionContainer{
+    width: 16%;
+    position: relative;    
+}
+.taiwanSportDescription  .additionContainer .additionPic{
+	border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 8px;
+    top:18px;
+}
+.taiwanSportDescription  .additionContainer .additionPic.hasBackground{
+    background-color: #B22D3C;
+}
+
+.taiwanSportDescription  .additionContainer .additionPic  img{
+	width: 40px;
+    height: 40px;
+}
+.taiwanSportDescription .titleAndDesc{
+	width:84%;
+}
+.taiwanSportDescription .titleAndDesc .title{
+	font-size: 1.2rem;
+    padding-top: 28px;
+}
+.taiwanSportDescription .titleAndDesc .description{
+	font-size: 1.1rem;
+    padding-top: 2%;
+    margin-bottom:20px;
+    line-height:1.5rem;
+    height:max-content;
+}
+.taiwanSportDescription .pic{
+	display: none;
+}
+.taiwanSportTimeShift .title{
+	padding:1% 3%;
+	font-size: 1.2rem;
+	width: 70%;
+}
+.taiwanSportTimeShift a{
+	display: block;
+	padding: 0 20px;
+	z-index:3;
+	width:30%;
+}
+.taiwanSportEPGContent .liveListBlock .list_item p {
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    width: 70%;
+}
+
+.taiwanSportEPGContent .liveListBlock .list_item .program {
+    width:70%;
+}
+
+.filterBlock{
+    margin: 5px 4%;
+    background-color: #303030;
+    height:86px;
+    position:relative;
+}
+.chFilter{
+    width: 100%;
+    background-color: #282828;
+    display: flex;
+	padding: 10px 20px 10px 20px;
+    position: absolute;
+    top: 50px;
+    height: 36px;
+    box-sizing: border-box;
+}
+
+.chFilterRg {
+	margin: 0 5%;
+	font-size:11px;
+	
+}
+.chFilterRg > input{
+	-webkit-appearance: radio;
+}
+.olympics_filter {
+	box-sizing: border-box;
+    display: inline-block;
+    /* margin-left: 0px; */
+    /* padding-top: 5px; */
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width:70px;
+}
+
+.sportFilterContent{
+	width: 85%;
+    padding: 14px 10px;
+    white-space: nowrap;
+    overFlow: hidden;
+    text-overflow: ellipsis;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    box-sizing: border-box;	
+}
+
+.taiwanSportEPGContent .liveListBlock .list_item .medal{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    -webkit-box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
+    /* background-size: 40px 40px; */
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    right:105px;
+    top: 50%;
+    margin-top: -20px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.taiwanSportEPGContent .liveListBlock .list_item .CT{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    -webkit-box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 20%);
+    /* background-size: 40px 40px; */
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    right: 57px;
+    top: 50%;
+    margin-top: -20px;
+    text-align: center;
+    padding: 7px 0;
+}
+.olympicsCardTitle{
+	margin:8px 4%;
+}
+
+.marqueeBlock {
+	height:32px;
+	margin: 0;
+}
+.marqueeTitle::before {
+    background: url(../images/olympics/marquee_title_fifa_bg_m_2022.png) left top no-repeat;
+
+}
+
+
+.marqueeTitle::after  {
+    content: "";
+/*     position: absolute; */
+/*     width: 100%; */
+/*     height: 40px; */
+/*     background-color: #181818; */
+/*     overflow:hidden; */
+/*     z-index: 2; */
+   
+}
+.marquee-silder{
+	/*padding:36px 0 0 45px;*/
+	padding:12px 0 0 165px;
+}
+/* .marquee-silder::before{  */
+/* content: ""; */
+/*     position: absolute; */
+/*     width: 10px; */
+/*     height: 40px; */
+/*     background-color: #181818; */
+/*     overflow: hidden; */
+/*     z-index: 2; */
+/* } */
+.marquee-silder .marqueeContent{
+	font-size:14.4px;
+	line-height: 11px;
+	letter-spacing:0.34px;
+	margin:0;
+	/*padding: 0 0 0 35px;*/
+}
+
+.medalsListBlock::before {
+	content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.chtMedalsBlock{
+	width:	100%;
+	display: inline-block;
+	text-align: center;
+}
+
+.chtMedalsTitle{
+	height:38px;
+    display: block;
+    position: relative;
+	margin: 0 auto 12px auto;
+    width: 292px;
+	background: url(../images/olympics/m_chtMedalsTitle_m.png) left no-repeat;
+}
+.chtMedals .updateDate{
+	text-align: center;
+}
+.olympicsCardTitle >h2{
+	font-size: 1.25rem;
+    line-height: 1.2em;
+}
+.olympicsCardTitle .hinet.bt_more p {
+	top: -14px;
+    right: 6px;
+    font-size:12px;
+}
+.newsListBlock .list_item .box {
+	width: 155px;
+	height: 104px; 
+    padding: 0 10px 0 0;
+}
+
+.newsListBlock .list_item .pic {
+	width: 155px;
+	height: 104px; 
+	padding: 0;
+}
+
+.newsListBlock .list_item {
+	float: none;
+	width: auto;
+	height:124px;
+	margin:0 0 10px 0;
+	padding: 10px;
+}
+
+.newsListBlock .list_item .com p.newsContent{
+	display:none;
+}
+
+.newsListBlock .list_item .com .title {
+	font-size: 1.125rem;
+	line-height: 150%;
+	color: #eee;
+	height: 4.6em;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	white-space:unset;
+	
+}
+.newsListBlock .list_item .com .time {
+	font-size:12px;
+}	
+.swiper-container-initialized:hover .btn_prev,
+	.swiper-container-initialized:hover .btn_next {
+	display: block;
+}
+.list_sport .btn_next, .list_sport .btn_prev{
+    background-color:#111;
+    opacity:0.8;
+    width:50px;
+    display:block;
+}
+
+.list_date.olympics .btn_next, .list_date.olympics .btn_prev{
+    display:block;
+	width:30px;   
+} 
+.sportsWrapper{
+	/*display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;*/
+	height:58vh;
+	width:80vw;
+	overFlow: hidden;
+	
+}
+.fifaScoreAreaBlock{
+	margin: 0;
+}
+.fifaScoreBlock::after {
+    padding: 0 0 16px 0;
+}
+.title-wrapper .tabArea.fifascore ul::before {
+	display:none;
+}
+.title-wrapper::before {
+    background: #000000;
+    opacity: 0.3;
+    content: "";
+    display: block;
+    height: 46px;
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 100%;
+ }
+ .title-wrapper.fifascore {
+    padding: 20px 0 24px;
+    width: 100%;
+}
+ 
+.title-wrapper .tabArea.fifascore li {
+  	font-size: 16px;
+  	font-weight: 500;
+  	line-height: 46px;
+  	margin: 0 2px;
+}
+
+.title-wrapper .tabArea.fifascore li a {
+    line-height: 28px;
+    margin: 9px 0;
+    padding: 0 13px;
+}
+.fifaScoreBlock{
+	padding: 0 4%;
+}
+
+.fifaScoreBlock .list_item {
+	float: none;
+    margin: 0 0 10px 0;
+    width: auto;
+    height:auto;
+    min-height: 241px;
+}
+.fifaScoreBlock .list_item .com{
+	font-size: 14px;
+	padding: 42px 10px 10px 10px;
+}
+
+.fifaScoreBlock .list_item:nth-of-type(3n+0) {
+  	margin-right: 0;
+}
+.fifaScoreBlock .list_item:nth-of-type(4n+0) {
+  	margin: 0 1% 16px 0;
+}
+.fifaScoreBlock .list_item .txt_top {
+    left: 12px;
+    height: 28px;
+    font-size: 16px;
+    padding: 0 6px;
+    line-height: 34px;
+    font-weight: bold;
+}
+
+.fifaScoreBlock .list_item .com .pic {
+    margin-right: 10px;
+}
+.fifaScoreBlock .teamName {
+    margin-left: 10px;
+    width: 35%
+}
+
+.fifaScoreBlock .s1{
+	width:11%;
+}
+.fifaScoreBlock .s2{
+	width:11%;
+}
+.fifaScoreBlock .s3{
+	width:11%;
+}
+.fifaScoreBlock .s4{
+	width:14%;
+}
+.fifaScoreBlock .s5{
+	width:18%;
+}
+
+}
