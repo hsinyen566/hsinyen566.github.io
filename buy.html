@@ -33,7 +33,10 @@
 <script type="text/javascript" src="https://stg.portal.ott.hinet.net/resources/js/jquery.marquee.min.js"></script>
 <script type="text/javascript" src="https://stg.portal.ott.hinet.net/resources/js/lazysizes.min.js"></script>
 <script>
-	<section>  
+
+
+             
+    <section>  
        <div class="cardTitle">
        	<h2 class="olympicsCardTitle">世足戰績表</h2>
        </div>
@@ -43,132 +46,253 @@
 
 	<div class="title-wrapper fifascore">
        <div class="tabArea fifascore">
-        <ul class="tabSet" id="fifascoreMenu">
-        	<div class="swiper-wrapper">
+        <ul class="tabSet swiper-container-initialized swiper-container-horizontal swiper-container-free-mode" id="fifascoreMenu">
+        	<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
         	
-        	<li class="item swiper-slide active"><a href="javascript:void(0)"  onclick='getFifaScore("4");return false;'>小組賽</a></li>
-          		<li class="item swiper-slide "><a href="javascript:void(0)"  onclick='getFifaScore("3");return false;'>16強賽</a></li>
-          		<li class="item swiper-slide "><a href="javascript:void(0)"  onclick='getFifaScore("2");return false;'>八強賽</a></li>
-          		<li class="item swiper-slide "><a href="javascript:void(0)"  onclick='getFifaScore("1");return false;'>準/決賽</a></li>
+        	<li class="item swiper-slide swiper-slide-active"><a href="javascript:void(0)" onclick="getFifaScore(&quot;4&quot;);return false;">小組賽</a></li>
+          		<li class="item swiper-slide active swiper-slide-next"><a href="javascript:void(0)" onclick="getFifaScore(&quot;3&quot;);return false;">16強賽</a></li>
+          		<li class="item swiper-slide"><a href="javascript:void(0)" onclick="getFifaScore(&quot;2&quot;);return false;">八強賽</a></li>
+          		<li class="item swiper-slide"><a href="javascript:void(0)" onclick="getFifaScore(&quot;1&quot;);return false;">準/決賽</a></li>
           		</div>
-        </ul>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></ul>
       </div>
     </div>
 
              
-        <div id="olympicsFifaScore"></div>
-    </div>     
-<!--         <div class="list_medals swiper3402" style="display:block;"> -->
-          
-<!-- 	        <div class="swiper-wrapper" > -->
-	        
-<!-- 		              		<div class="list_item swiper-slide">        -->
-<!-- 		              			<div class="com" style="vertical-align: middle;"> -->
-<!-- 		              				<div class="leaderboard"><div class="ranking">1</div></div> -->
-<!-- 					               <h3 style="padding:0 0 27px 0;">1</h3> -->
-<!-- 					               <p class="medalItem_g" >1</p> -->
-<!-- 								   <p class="medalItem_s" >1</p> -->
-<!-- 								   <p class="medalItem_b" >1</p> -->
-<!-- 								   <p class="medalItem_t" >1</p> -->
-				
-					              
-<!-- 					            </div> -->
-<!-- 					        </div>	 -->
-<!-- 			 </div> -->
-<!-- 		</div>  -->
-		
-	
-
-<!-- 		        <div class="fifaScoreBlock "> -->
-<!-- 			        <div class="list_item">   -->
-			               
-<!-- 			            <div class="com" style="color:#979797;" > -->
-<!-- 						   <div class="teamHeader"> -->
-<!-- 							   	<div class="teamName"> 隊伍 </div>  -->
-<!-- 							   	<div class="s1"> 勝 </div>  -->
-<!-- 							   	<div class="s2"> 和</div>   -->
-<!-- 							   	<div class="s3"> 負</div> -->
-<!-- 							   	<div class="s4"> 積分</div>  -->
-<!-- 							   	<div class="s5"> 淨勝球</div>  -->
-<!-- 							</div> -->
-<!-- 							   		<div class="teamName"> -->
-<!-- 							   			<div class="pic" > -->
-
-<!-- 							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_multiAngleIcon_1-Hami-LOGO.jpg" /> -->
-<!-- 							   			</div> -->
-<!-- 							   			<p >克羅埃西亞</p> -->
-<!-- 							   		</div> -->
-<!-- 							   		<div class="s1">2</div>  -->
-<!-- 							   		<div class="s2">0</div>   -->
-<!-- 							   		<div class="s3">15</div> -->
-<!-- 							   		<div class="s4" style="color:#8A1538;">11</div>  -->
-<!-- 							   		<div class="s5">123</div>  -->
-<!-- 								</div>	 -->
-<!-- 			            </div> -->
-<!-- 						  <div class="txt_top">小組賽</div>      -->
-<!-- 			         </div> -->
-<!-- 		        </div> -->
-
-<!-- 		        <div class="fifaScoreBlock "> -->
-<!-- 			        <div class="list_item">   -->
-			               
-<!-- 			            <div class="com" style="color:#979797;display:block;text-align:center;" > -->
-<!-- 			               <h3 style="font-size:18px;color:#8A1538;">12月9日</h3>  -->
-<!--  			               <p style="color:#333333;font-size:12px;"class="projectName">23:00</p>  -->
-<!-- 						   <div class="fifadividers"></div> -->
-<!-- 							   		<div class="teamName t16"> -->
-<!-- 							   			<div class="pic t16" > -->
-<!-- 							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_multiAngleIcon_1-Hami-LOGO.jpg" /> -->
-<!-- 							   			</div> -->
-<!-- 							   			<p class="t16">克羅埃西亞</p> -->
-<!-- 							   		</div> -->
-<!-- 								</div> -->
-								
-<!-- 			            </div> -->
-<!-- 						  <div class="txt_top">8強賽</div>      -->
-<!-- 			         </div> -->
-<!-- 		        </div>		    -->
-</section>
-<script id="templateTeam" type="x-tmpl-mustache">
+        <div id="olympicsFifaScore">
 
 		        <div class="fifaScoreBlock ">
-		        {{#list}}
 			        <div class="list_item">  
 			               
-			            <div class="com" style="color:#979797;" >
-						   <div class="teamHeader">
-							   	<div class="teamName"> 隊伍 </div> 
-							   	<div class="s1"> 勝 </div> 
-							   	<div class="s2"> 和</div>  
-							   	<div class="s3"> 負</div>
-							   	<div class="s4"> 積分</div> 
-							   	<div class="s5"> 淨勝球</div> 
-							</div>
+			            <div class="com" style="color:#979797;display:block;text-align:center;">
+						   		<h3 style="font-size:18px;color:#8A1538;">&lrm;&nbsp;&lrm;&nbsp;</h3> 
+ 			              	    <p style="color:#333333;font-size:12px;" class="projectName">&lrm;&nbsp;&lrm;&nbsp;</p> 
+						  		<div class="fifadividers"></div>
 							
-							{{#elements}}
-								<div class="teamItem isplay {{rankClass}}" >
-							   		<div class="teamName">
-							   			<div class="pic" >
-							   			<img src="{{imageId}}" />
+
+								<div class="teamItem t16 ">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_IRI_epg_3x.png">
 							   			</div>
-							   			<p >{{title}}</p>
+							   			<p class="t16">伊朗</p>
 							   		</div>
-
-							   		<div class="s1">{{displaySeries}}</div> 
-							   		<div class="s2">{{percent}}</div>  
-							   		<div class="s3">{{imdbRating}}</div>
-							   		<div class="s4" style="color:#8A1538;">{{score}}</div> 
-							   		<div class="s5">{{functionId}}</div> 
-								</div>	
-							 {{/elements}}				      
+								</div>
+								<div class="teamItem t16 win" "="">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_KOR_epg_3x.png">
+							   			</div>
+							   			<p class="t16">韓國</p>
+							   		</div>
+								</div>
+								
 			            </div>
-						  <div class="txt_top">{{title}}</div>     
+						  <div class="txt_top">16強賽</div>     
 			         </div>
-		          
-				{{/list}}
+			        <div class="list_item">  
+			               
+			            <div class="com" style="color:#979797;display:block;text-align:center;">
+						   		<h3 style="font-size:18px;color:#8A1538;">&lrm;&nbsp;12月09日&lrm;&nbsp;</h3> 
+ 			              	    <p style="color:#333333;font-size:12px;" class="projectName">&lrm;&nbsp;00:00&lrm;&nbsp;</p> 
+						  		<div class="fifadividers"></div>
+							
 
-		        </div>
+								<div class="teamItem t16 win">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_IRI_epg_3x.png">
+							   			</div>
+							   			<p class="t16">伊朗</p>
+							   		</div>
+								</div>
+								<div class="teamItem t16 " "="">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_KOR_epg_3x.png">
+							   			</div>
+							   			<p class="t16">韓國</p>
+							   		</div>
+								</div>
+								
+			            </div>
+						  <div class="txt_top">16強賽</div>     
+			         </div>
+			        <div class="list_item">  
+			               
+			            <div class="com" style="color:#979797;display:block;text-align:center;">
+						   		<h3 style="font-size:18px;color:#8A1538;">&lrm;&nbsp;12月09日&lrm;&nbsp;</h3> 
+ 			              	    <p style="color:#333333;font-size:12px;" class="projectName">&lrm;&nbsp;23:00&lrm;&nbsp;</p> 
+						  		<div class="fifadividers"></div>
+							
 
+								<div class="teamItem t16 win">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_IRI_epg_3x.png">
+							   			</div>
+							   			<p class="t16">伊朗</p>
+							   		</div>
+								</div>
+								<div class="teamItem t16 " "="">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_KOR_epg_3x.png">
+							   			</div>
+							   			<p class="t16">韓國</p>
+							   		</div>
+								</div>
+								
+			            </div>
+						  <div class="txt_top">16強賽</div>     
+			         </div>
+			        <div class="list_item">  
+			               
+			            <div class="com" style="color:#979797;display:block;text-align:center;">
+						   		<h3 style="font-size:18px;color:#8A1538;">&lrm;&nbsp;12月09日&lrm;&nbsp;</h3> 
+ 			              	    <p style="color:#333333;font-size:12px;" class="projectName">&lrm;&nbsp;23:00&lrm;&nbsp;</p> 
+						  		<div class="fifadividers"></div>
+							
+
+								<div class="teamItem t16 win">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_IRI_epg_3x.png">
+							   			</div>
+							   			<p class="t16">伊朗</p>
+							   		</div>
+								</div>
+								<div class="teamItem t16 " "="">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_KOR_epg_3x.png">
+							   			</div>
+							   			<p class="t16">韓國</p>
+							   		</div>
+								</div>
+								
+			            </div>
+						  <div class="txt_top">16強賽</div>     
+			         </div>
+			        <div class="list_item">  
+			               
+			            <div class="com" style="color:#979797;display:block;text-align:center;">
+						   		<h3 style="font-size:18px;color:#8A1538;">&lrm;&nbsp;12月09日&lrm;&nbsp;</h3> 
+ 			              	    <p style="color:#333333;font-size:12px;" class="projectName">&lrm;&nbsp;23:00&lrm;&nbsp;</p> 
+						  		<div class="fifadividers"></div>
+							
+
+								<div class="teamItem t16 win">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_IRI_epg_3x.png">
+							   			</div>
+							   			<p class="t16">伊朗</p>
+							   		</div>
+								</div>
+								<div class="teamItem t16 " "="">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_KOR_epg_3x.png">
+							   			</div>
+							   			<p class="t16">韓國</p>
+							   		</div>
+								</div>
+								
+			            </div>
+						  <div class="txt_top">16強賽</div>     
+			         </div>
+			        <div class="list_item">  
+			               
+			            <div class="com" style="color:#979797;display:block;text-align:center;">
+						   		<h3 style="font-size:18px;color:#8A1538;">&lrm;&nbsp;12月09日&lrm;&nbsp;</h3> 
+ 			              	    <p style="color:#333333;font-size:12px;" class="projectName">&lrm;&nbsp;23:00&lrm;&nbsp;</p> 
+						  		<div class="fifadividers"></div>
+							
+
+								<div class="teamItem t16 win">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_IRI_epg_3x.png">
+							   			</div>
+							   			<p class="t16">伊朗</p>
+							   		</div>
+								</div>
+								<div class="teamItem t16 " "="">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_KOR_epg_3x.png">
+							   			</div>
+							   			<p class="t16">韓國</p>
+							   		</div>
+								</div>
+								
+			            </div>
+						  <div class="txt_top">16強賽</div>     
+			         </div>
+			        <div class="list_item">  
+			               
+			            <div class="com" style="color:#979797;display:block;text-align:center;">
+						   		<h3 style="font-size:18px;color:#8A1538;">&lrm;&nbsp;12月09日&lrm;&nbsp;</h3> 
+ 			              	    <p style="color:#333333;font-size:12px;" class="projectName">&lrm;&nbsp;23:00&lrm;&nbsp;</p> 
+						  		<div class="fifadividers"></div>
+							
+
+								<div class="teamItem t16 win">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_IRI_epg_3x.png">
+							   			</div>
+							   			<p class="t16">伊朗</p>
+							   		</div>
+								</div>
+								<div class="teamItem t16 " "="">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_KOR_epg_3x.png">
+							   			</div>
+							   			<p class="t16">韓國</p>
+							   		</div>
+								</div>
+								
+			            </div>
+						  <div class="txt_top">16強賽</div>     
+			         </div>
+			        <div class="list_item">  
+			               
+			            <div class="com" style="color:#979797;display:block;text-align:center;">
+						   		<h3 style="font-size:18px;color:#8A1538;">&lrm;&nbsp;12月09日&lrm;&nbsp;</h3> 
+ 			              	    <p style="color:#333333;font-size:12px;" class="projectName">&lrm;&nbsp;23:00&lrm;&nbsp;</p> 
+						  		<div class="fifadividers"></div>
+							
+
+								<div class="teamItem t16 win">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_IRI_epg_3x.png">
+							   			</div>
+							   			<p class="t16">伊朗</p>
+							   		</div>
+								</div>
+								<div class="teamItem t16 " "="">
+							   		<div class="teamName t16">
+							   			<div class="pic t16">
+							   			<img src="https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_KOR_epg_3x.png">
+							   			</div>
+							   			<p class="t16">韓國</p>
+							   		</div>
+								</div>
+								
+			            </div>
+						  <div class="txt_top">16強賽</div>     
+			         </div>
+		        </div>		   
+
+</div>
+    </div>     
+
+
+</section>
 </script>
 
 
