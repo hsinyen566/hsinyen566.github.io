@@ -37,9 +37,7 @@
 
              
     <section>  
-       <div class="cardTitle">
-       	<h2 class="olympicsCardTitle">世足戰績表</h2>
-       </div>
+
 
        <div class="fifaScoreAreaBlock" style="background: url(https://stg.apl.ott.hinet.net/HamiVideo/getHamiVideoImg.php?imageId=apl_aplm_channelInteract_record.png) repeat center center;">
 
@@ -293,129 +291,8 @@
 
 
 </section>
-</script>
 
 
-<script id="templateTeam16" type="x-tmpl-mustache">
-
-		        <div class="fifaScoreBlock ">
-		        {{#list}}
-			        <div class="list_item">  
-			               
-			            <div class="com" style="color:#979797;display:block;text-align:center;" >
-			               {{#elements}}
-						   		<h3 style="font-size:18px;color:#8A1538;">　{{formatDay}}　</h3> 
- 			              	    <p style="color:#333333;font-size:12px;"class="projectName">　{{formatTime}}　</p> 
-						  		<div class="fifadividers"></div>
-							
-
-								<div class="teamItem t16 {{#functionId_0}}win{{/functionId_0}}" >
-							   		<div class="teamName t16">
-							   			<div class="pic t16" >
-							   			<img src="{{imageId}}" />
-							   			</div>
-							   			<p class="t16">{{title}}</p>
-							   		</div>
-								</div>
-								<div class="teamItem t16 {{#functionId_1}}win{{/functionId_1}}"" >
-							   		<div class="teamName t16">
-							   			<div class="pic t16" >
-							   			<img src="{{tagImageId}}" />
-							   			</div>
-							   			<p class="t16">{{subTitle}}</p>
-							   		</div>
-								</div>
-								
-							 {{/elements}}				  
-			            </div>
-						  <div class="txt_top">{{title}}</div>     
-			         </div>
-		         {{/list}}
-		        </div>		   
-
-</script>
-
-
-
-
-<script>
-
-//var currentDateIndex="";
-//var currentPgKey = "";
-//var currentDate = "";
-var templateTeam = $('#templateTeam').html();
-Mustache.parse(templateTeam);
-var templateTeam16 = $('#templateTeam16').html();
-Mustache.parse(templateTeam16);
-
-function getFifaScore(level){
-	console.log('getFifaScore:'+level);
-	if(level!=null && level!==undefined && level=='')
-		return;
-	
-	try {
-		$.ajax({
-			type : 'POST',
-			cache : false,
-			url : '/hamivideo/olympics/getFifaScore.do',
-			data:{
-			'level': level
-			},
-			async : true,
-			success : function(response) {
-				//alert(response[0].elements[0].programInfo[0].imageSports);		
-	//			alert(JSON.stringify(response));
-	//console.log(JSON.stringify(response[0].elements[0]));
- 				var content = '';
-				if (response.length > 0) {
-					
-					if(level=='4'){
-						content = Mustache.render(templateTeam, {list: response});//小組賽
-					}else{
-						content = Mustache.render(templateTeam16, {list: response});
-					}
-					
-				}
-				$("#olympicsFifaScore").html(content);
-			},
-			error : function(jqXHR, textStatus, errorThrown) {
-				console.log(jqXHR+'/'+textStatus+'/'+errorThrown);
-				alert('後端系統異常，請稍後再試');
-			},
-			beforeSend : function(jqXHR, settings) {
-				//$("#epgList").html('');
-				loadingToggle(true);
-			},
-			complete : function(jqXHR, textStatus) {
-				loadingToggle(true);
-			}
-		});
-		} catch (err) {
-			alert(err);
-		}
-}
-
-
-
-$(document).ready(function(){ 
-	  var initLevel= '4';
-	 
-	  if(initLevel==''){
-		  $('.swiper-wrapper .item:first-child').addClass('active'); 
-		  initLevel='4';
-	  }
-	 
- 	  getFifaScore(initLevel);
-	  
-
-});
-
-//fifa menu click
-$('#fifascoreMenu .item.swiper-slide a').click(function(){
-	$('.item.swiper-slide').removeClass('active');
-	$(this).parent().addClass('active');
-});
- 
 
 
 	
