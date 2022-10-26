@@ -137,6 +137,11 @@ nav li a {
 nav li.active {
 	border-bottom: 5px solid #fff;
 }
+nav li.active h1 {
+	font-size: 20px;
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: normal;
+}
 
 nav .bt {
 	background-color: rgba(0, 0, 0, 0.5);
@@ -352,6 +357,15 @@ footer ul li {
 footer ul li a {
 	color: #888;
 }
+footer .ott_right{
+	display: inline-block;
+    color: #aaa;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    padding: 0 20px;
+    font-size: 0.75rem;
+    line-height: 200%;
+}
 
 .loginContent {
 	padding: 80px 0;
@@ -359,7 +373,7 @@ footer ul li a {
 
 .loginContent h2 {
 	font-family: 'Noto Sans TC', "Microsoft JhengHei", sans-serif;
-	font-size: 30px;
+	font-size: 24px;
 	line-height: 160%;
 	color: #eee;
 	margin-bottom: 10px;
@@ -436,7 +450,7 @@ footer ul li a {
 }
 
 .loginContent p.foxplusnote {
-	font-size: 16px;
+	font-size: 14px;
 	padding-top: 20px;
 	color: #FFFFFF;
 }
@@ -549,7 +563,7 @@ footer ul li a {
 
 
 .btSet {
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 50px;
 	border-radius: 30px;
 	text-align: center;
@@ -595,7 +609,7 @@ footer ul li a {
 
 .btSet.bt_phone {
 	position: relative;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .btSet.bt_phone a {
@@ -614,7 +628,7 @@ footer ul li a {
 
 .btSet.bt_wifi {
 	position: relative;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .btSet.bt_wifi a {
@@ -633,7 +647,7 @@ footer ul li a {
 
 .btSet.bt_fb {
 	background: #3b5998 url(../images/ic_facebook.svg) 24px center no-repeat;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .btSet.bt_fb a {
@@ -643,7 +657,7 @@ footer ul li a {
 
 .btSet.bt_google {
 	background: #dd4b39 url(../images/ic_google.svg) 24px center no-repeat;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .btSet.bt_google a {
@@ -653,7 +667,7 @@ footer ul li a {
 
 .btSet.bt_cht {
 	background: #555 url(../images/ic_mail.svg) 24px center no-repeat;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .btSet.bt_cht a {
@@ -662,13 +676,23 @@ footer ul li a {
 }
 
 .btSet.bt_mod {
-	background: #555 url(../images/ic_tv.svg) 24px center no-repeat;
-	font-size: 18px;
+	/*background: #555 url(../images/ic_tv.svg) 24px center no-repeat;*/
+	font-size: 16px;
+	position: relative;
 }
 
 .btSet.bt_mod a {
-	color: #fff;
+	/*color: #fff;*/
 	padding-left: 20px;
+}
+.btSet.bt_mod a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    background: url(../images/ic_tv.svg) 24px center no-repeat;
 }
 
 .btSet.smail {
@@ -4130,9 +4154,9 @@ p.description {
 }
 
 .player_main .controler .btPlay {
-	width: 60px;
-	height: 60px;
-	background: url(../images/ico_play_arr.svg) center center no-repeat;
+	width: 92px;
+	height: 92px;
+	background: url(../images/ico_play_now.png) center center no-repeat;
 	margin: 0 115px;
 }
 
@@ -4533,6 +4557,7 @@ p.description {
 	z-index: 2;
 	text-align: left;
 	font-size: 0.75rem;
+		display: inline-block;
 }
 
 .icon_auth i {
@@ -4541,10 +4566,15 @@ p.description {
 	height: 40px;
 	border-radius: 50%;
 	background: url(../images/icon_auth.svg) center center no-repeat;
-	background-color: rgba(255, 255, 255, 0.05);
+	background-color: rgba(255, 255, 255, 0.08);
 	cursor: pointer;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
 	position: relative;
+}
+.icon_auth i.fourK {
+	background: url(../images/icon_auth_4k.png) center center no-repeat;
+	width: 95px;
+	border-radius: 20px;
 }
 
 .icon_auth i:hover ~ .authOther {
@@ -4566,6 +4596,7 @@ p.description {
 	box-sizing: border-box;
 	color: #eee;
 	font-size: 0.875rem;
+	margin-left: 0px;
 }
 /**
 .icon_auth .authOther::after {
@@ -5362,6 +5393,16 @@ p.description {
 	float: left;
 }
 
+.chartBlock .chart_item .textMe {
+	position: relative;
+	padding: 5px 15px;
+	background-color: rgb(53, 187, 255, 0.2);
+	color: #fff;
+	border-radius: 25px;
+	margin-bottom: 2px;
+	float: left;
+}
+
 .chartBlock .chart_item.hamiType .name {
 	color: #50E3C2;
 }
@@ -5478,8 +5519,8 @@ p.description {
 
 .chartBlock .chart_btm .chart_bt {
 	position: absolute;
-	bottom: 30px;
-	right: 5px;
+	bottom: 10px;
+	right: 0px;
 }
 
 .chartBlock .chart_btm .chart_bt a {
@@ -6076,14 +6117,28 @@ p.description {
 .purchaseListBlock .list_item .buyDate{
     color: #888888;	
 }
-
-
-
-
-
+.buyListBlock .list_item .bt.bk a.unsubscribe  {
+	font-size: 12px;
+	padding: 0 8px;
+    border: solid 1px #eeeeee;
+    background:none;
+    min-width: 44px;
+    line-height: 22px;
+    border-radius: 60px;
+    color:#eeeeee;
+}
+.noSalesplanDesc{
+		padding: 15vh 0;
+		text-align: center;
+		font-size: 1.5rem;
+		letter-spacing: 1px;
+		line-height:36px;
+}
 
 .buyListBlock {
 	margin-bottom: 20px;
+	display: flex;
+    flex-wrap: wrap;
 }
 
 .buyListBlock::after {
@@ -6100,6 +6155,7 @@ p.description {
 	border-radius: 5px;
 	overflow: hidden;
 	text-align: center;
+	height: fit-content;
 }
 
 .buyListBlock .list_item:nth-of-type(3n+0) {
@@ -6265,7 +6321,15 @@ p.description {
 	display: inline-block;
 	margin-right: 10px;
 }
-
+.buyListBlock .list_item .info a{
+	color: #fff;
+    text-decoration: underline;
+    word-break: break-all;
+}
+.buyListBlock .list_item .bt a:hover {
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1);
+}
 .buyListBlock .list_item .info.byDay span {
 	color: #CDB187;
 	border-color: #CDB187;
@@ -9462,7 +9526,7 @@ p.description {
 	/* popup */
 }
 
-@media screen and (max-width: 50px) {
+@media screen and (max-width: 767px) {
 	.webMode {
 		display: none !important;
 	}
@@ -10413,7 +10477,7 @@ p.description {
 		margin-left: -5px;
 	}
 	.mobileMode .detail-wrapper .icon_auth i { /*202008*/
-		background-color: transparent;
+		/*background-color: transparent;*/
 		margin-right: 5px;
 	}
 	.mobileMode .detail-wrapper .icon_auth .authOther { /*202008*/
@@ -10738,9 +10802,19 @@ p.description {
  		color:#888888;
  	}
  	
- 	
+ 	.buyListBlock .list_item .bt.unsubscribe {
+ 		bottom: 32px;
+    	right: 25px;
+ 	}
+    
+ 	.noSalesplanDesc{
+ 		padding: 15vh 4%;
+		font-size: 16px;
+		line-height:26px;
+	}
 	.buyListBlock {
 		margin-bottom: 20px;
+		display:block;
 	}
 	.buyListBlock .list_item {
 		float: none;
@@ -10813,8 +10887,7 @@ p.description {
 	.buyBlock .com.generalBuyBlock.orderedSubProductHintBlock{
 		width:auto;
 		max-width:435px;
-	}
-	
+	}	
 	.popup .com.selectSportTeamBlock{
     	width: auto; 
     	background-color: #424242; 
