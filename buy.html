@@ -448,6 +448,26 @@
 	        </div>
         </div>
     </div>
-	
+	    <script>
+    //純方案頁才需要
+    function changeSalesType(salesType){
+    	$('.buyListBlock').hide();
+    	$('.salesType'+salesType).show();
+    	$('.twoType li.active').removeClass('active');
+    	$('.twoType li[data-type='+salesType+']').addClass('active');
+    }
+    
+    $('.twoType li').click(function(){
+    	changeSalesType($(this).data('type'));
+    });
+    
+    var salesType = '1';
+    if($('.salesType1 .list_item').length>0){
+    	salesType = '1';
+    }else if($('.salesType2 .list_item').length>0){
+    	salesType = '2';
+    }
+    changeSalesType(salesType);
+    </script>
 </body>
 </html>
