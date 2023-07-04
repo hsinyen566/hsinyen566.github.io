@@ -1,40 +1,36 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script>
-function testScrollTop (){
-$('#terms_content').scrollTop(0);
-alert('testScrollTop測試完成!');
-
-
-
-
-}
-
-
-
-function testReplaceAll(){
-var test= '測試語法&lt;3&gt;555666';
-test.replaceAll('&lt;', '<').replaceAll('&gt;', '>');
-alert('testReplaceAll測試完成!'+test);
-
-}
-
-function testReplaceAllTry(){
-  var test= '測試語法&lt;3&gt;555666';
-  try{
-
-test.replaceAll('&lt;', '<').replaceAll('&gt;', '>');
-  }catch(){
-    
-  }
-    alert('testReplaceAll測試完成!'+test);
-
-}
-  
-</script>
+<!DOCTYPE html>
 <html>
+<head>
+    <title>Alert Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        function testReplaceAll(){
+          var test= '測試語法&lt;3&gt;555666';
+          test=test.replaceAll('&lt;', '<').replaceAll('&gt;', '>');
+          alert('testReplaceAll測試完成!'+test);
+
+        }
+        
+
+
+ function testReplaceAllTry() {
+  		 var test= '測試語法&lt;3&gt;555666';
+         
+            try {
+                 test=test.replaceAll('&lt;', '<').replaceAll('&gt;', '>');
+          
+            } catch (error) {
+                console.log("An error occurred: " + error);
+            }
+            
+            alert('testReplaceAll測試完成!'+test);
+        }
+
+    </script>
+</head>
 <body>
-<a href="#" onclick="testReplaceAll();return false;">測試replaceAll</a>
-<a href="#" onclick="testScrollTop();return false;">測試ScrollTop</a>
+
+    <a href="#" onclick="testReplaceAll();return false;">測試replaceAll</a><br>
 <a href="#" onclick="testReplaceAllTry();return false;">測試replaceAll，加上try catch</a>
 </body>
 </html>
